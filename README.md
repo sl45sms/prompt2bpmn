@@ -8,11 +8,14 @@ Returns a string with the BPMN 2 diagram, or some guidelines if the prompt is no
 
 # prerequisites
 You have to set the enviroment variables:
+```
 GOOGLE_APPLICATION_CREDENTIALS = path to the json file with the credentials
 VERTEX_PROJECT = project id
 VERTEX_LOCATION = location
+```
 
 # usage example
+```javascript
 const { promptToBpmn } = require('prompt2bpmn');
 
 async function generateBpmn() {
@@ -33,5 +36,6 @@ async function generateBpmn() {
 }
 
 generateBpmn();
+```
 
 
