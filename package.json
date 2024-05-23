@@ -1,0 +1,26 @@
+{
+  "name": "prompt2bpmn",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "description": "Converts your prompt to BPMN 2 diagram.",
+  "repository": "git@github.com:sl45sms/prompt2bpmn.git",
+  "author": "Panagiotis Skarvelis <panagiotis@skarvelis.gr>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.2.0"
+  },
+  "scripts": {
+    "test": "node --env-file=.env --experimental-specifier-resolution=node --experimental-modules --no-warnings --loader ts-node/esm ./test/test.ts",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig.commonjs.json && ./setType.sh"
+  },
+  "homepage": "https://github.com/sl45sms/prompt2bpmn"
+}
+
