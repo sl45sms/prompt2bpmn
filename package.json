@@ -1,6 +1,6 @@
 {
   "name": "prompt2bpmn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -23,4 +23,3 @@
   },
   "homepage": "https://github.com/sl45sms/prompt2bpmn"
 }
-
